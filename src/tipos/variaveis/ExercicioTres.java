@@ -1,4 +1,4 @@
-package exercicio03;
+package tipos.variaveis;
 
 import java.util.Scanner;
 
@@ -23,5 +23,7 @@ public class ExercicioTres {
 		salarioLiquido = salarioBruto + adicionalNoturno + (horasExtras*5) - descontos;
 		
 		System.out.println("Salário líquido: " + salarioLiquido);
+		
+		leitor.close();
 	}
 }

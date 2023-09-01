@@ -1,4 +1,4 @@
-package exercicio01;
+package tipos.variaveis;
 
 import java.util.Scanner;
 
@@ -17,5 +17,7 @@ public class ExercicioUm {
 		novoSalario = salario + abono;
 		
 		System.out.printf("O novo salário é: %.2f", novoSalario);
+		
+		leitor.close();
 	}
 }

@@ -1,4 +1,4 @@
-package exercicio02;
+package tipos.variaveis;
 
 import java.util.Scanner;
 
@@ -26,5 +26,7 @@ public class ExercicioDois {
 
 
         System.out.println("Média final: " + media);
+        
+        leitor.close();
     }
 }

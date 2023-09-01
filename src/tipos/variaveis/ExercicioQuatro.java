@@ -1,4 +1,4 @@
-package exercicio04;
+package tipos.variaveis;
 
 import java.util.Scanner;
 
@@ -25,7 +25,8 @@ public class ExercicioQuatro {
         diferenca = (n1 * n2) - (n3 * n4);
 
         System.out.println("Diferença é: " + diferenca);
-
+        
+        leitor.close();
     }
 
 }
