@@ -2,7 +2,7 @@ package poo.exercicio_um;
 
 import java.util.regex.Pattern;
 
-public class Cliente{
+public abstract class Cliente{
     private String email;
     private String nome;
     private char sexo;
@@ -66,7 +66,7 @@ public class Cliente{
     }
 
     public void setEmail(String email){
-        this.verificarFormatoEmail(email);
+        Cliente.verificarFormatoEmail(email);
         this.email = email;
     }
 
@@ -75,7 +75,7 @@ public class Cliente{
     }
 
     public void setSexo(char sexo){
-        this.verificarSexoValido(sexo);
+        Cliente.verificarSexoValido(sexo);
         this.sexo = Character.toUpperCase(sexo);
     }
 
@@ -83,7 +83,7 @@ public class Cliente{
         this.idade = idade;
     }
 
-    public void setAtivo(boolean ativo){
+    public void isAtivo(boolean ativo){
         this.ativo = ativo;
     }
 }
