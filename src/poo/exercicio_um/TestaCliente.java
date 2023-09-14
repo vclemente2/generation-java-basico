@@ -2,6 +2,7 @@ package poo.exercicio_um;
 
 public class TestaCliente{
     public static void main(String[] args){
+    	try {
         PessoaFisica clienteUm = new PessoaFisica("qualquercoisa@email.com", "Vinicius", 'm', 30, "12345678910");
 
         PessoaFisica clienteDois = new PessoaFisica();
@@ -24,5 +25,8 @@ public class TestaCliente{
         clienteTres.visualizar();
         System.out.println("\n*****************\n");    	
         clienteQuatro.visualizar();
+    	}catch(Exception e) {
+    		System.out.println(e.getMessage());
+    	}
     }
 }
