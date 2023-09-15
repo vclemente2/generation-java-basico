@@ -1,12 +1,19 @@
 package poo.exercicio_um;
 
+import java.util.Optional;
+
 public class TestaCliente{
     public static void main(String[] args){
     	try {
         PessoaFisica clienteUm = new PessoaFisica("qualquercoisa@email.com", "Vinicius", 'm', 30, "12345678910");
 
         PessoaFisica clienteDois = new PessoaFisica();
-        clienteDois.setEmail("clientedois@email.com");
+        
+        String email = null;
+        Optional<String> emailExistente = Optional.ofNullable(email); 
+        email = emailExistente.orElse("emailpadrao@email.com");
+        
+        clienteDois.setEmail(email);
         clienteDois.setNome("Gabriela");
         clienteDois.setSexo('f');
         clienteDois.setIdade(28);
